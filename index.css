@@ -1,0 +1,65 @@
+img{
+    width: 100%;
+    height: 100%;
+}
+h2,h4{
+    text-align: center;
+}
+h2{
+    background-color: pink;
+}
+h4{
+    background-color: antiquewhite;
+}
+q{
+    background: linear-gradient(90deg, rgba(255,13,217,1) 14%, rgba(209,88,204,1) 31%, rgba(194,23,241,1) 68%, rgba(182,92,163,1) 97%);
+    animation: 2s slide-right 2s forwards;
+    transform:translateX(-100%);
+}
+img:hover{
+    transform: rotate(45grad);
+    transform-origin:  70% 90% 0;
+}
+
+blockquote{
+    width: 200px;
+    word-wrap: break-word;
+}
+
+menu{
+    border: 1px black solid;
+    position: fixed;
+    right: 0;
+    top: 10%;
+}
+.image{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.quote {
+    position: absolute;
+    top: 15px;
+    left: 200px;
+}
+.texts{
+    width: 200px;
+    height: 100px;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.someInput{
+    align-self: center;
+}
+
+blockquote::before {
+    content: "«";
+    color: black;
+}
+
+blockquote::after {
+    content: "»";
+    color: black;
+}
